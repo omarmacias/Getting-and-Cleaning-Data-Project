@@ -1,15 +1,15 @@
 ## Overview
 The data mentioned below was transformed from raw to tidy data by
-* 1.	Merging the training and the test sets to create one data set.
-	-This was done by using rbind() and cbind(), and names() was used to change the names correctly.
-* 2.	Extracting only the measurements on the mean and standard deviation for each measurement.
-	-This was done by using grep()
-* 3.	Use descriptive activity names to name the activities in the data set
-	-This was done by using read.table on the activity_labels.txt file
-* 4.	Appropriately label the data set with descriptive variable names.
-	-This was done by checking the number in the activity column, and if it matched a number it would be changed correctly.
-* 5.	From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
-	-This was done by using the plyr library package, aggregate(), order() and using write.table to export the data to a text file.
+* 1. Merging the training and the test sets to create one data set.
+	* This was done by using rbind() and cbind(), and names() was used to change the names correctly.
+* 2. Extracting only the measurements on the mean and standard deviation for each measurement.
+	* This was done by using grep()
+* 3. Use descriptive activity names to name the activities in the data set
+	* This was done by using read.table on the activity_labels.txt file
+* 4. Appropriately label the data set with descriptive variable names.
+	* This was done by checking the number in the activity column, and if it matched a number it would be changed correctly.
+* 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+	* This was done by using the plyr library package, aggregate(), order() and using write.table to export the data to a text file.
 	
 All of the above was done to the data and run_analysis.R script.
 
